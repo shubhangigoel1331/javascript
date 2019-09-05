@@ -1,0 +1,1762 @@
+function ReportCard(id,name){
+    this.id=id;
+    this.name=name;
+}
+undefined
+function ReportCard(id,name,sub1,sub2,sub3){
+    this.id=id;
+    this.name=name;
+    this.sub1=sub1;
+    this.sub2=sub2;
+    this.sub3=sub3;
+}
+undefined
+ReportCard.prototype.totalMarks=function(){
+    return this.total=this.sub1+this.sub2+this.sub3;
+}
+ƒ (){
+    return this.total=this.sub1+this.sub2+this.sub3;
+}
+ReportCard.prototype.percentage=function(){
+     return this.percentage=(this.totalMarks/3)*100;
+}
+ƒ (){
+     return this.percentage=(this.totalMarks/3)*100;
+}
+ReportCard.prototype.grade=function(){
+    if(this.percentage>90){
+        console.log('A grade');
+        else if(this.percentage>70 && this.percentage<91){
+VM1727:4 Uncaught SyntaxError: Unexpected token else
+ReportCard.prototype.grade=function(){
+    if(this.percentage>90){
+        console.log('A grade');
+    }
+        else if(this.percentage>70 && this.percentage<91){
+           
+VM1750:6 Uncaught SyntaxError: Unexpected end of input
+ReportCard.prototype.grade=function(){
+    if(this.percentage>=90){
+        console.log('A grade');
+    }
+        else if(this.percentage>=70 && this.percentage<90){
+                console.log('B grade');
+        }
+         else(this.percentage>=60 && this.percentage<70)?console.log('C grade'):console.log('Fail');
+}
+              
+           
+ƒ (){
+    if(this.percentage>=90){
+        console.log('A grade');
+    }
+        else if(this.percentage>=70 && this.percentage<90){
+                console.log('B grade');
+        }
+         else(this…
+ReportCard.prototype.print=function(){
+    return this.print=console.log(`
+     student id : ${this.id} 
+VM2254:3 Uncaught SyntaxError: Unexpected end of input
+ReportCard.prototype.print=function(){
+    return this.print=console.log(`
+     student id    : ${this.id} 
+     student name  : ${this.name}
+     marks in sub1 : ${this.sub1}
+     marks in sub2 : ${this.sub2}
+     marks in sub3 : ${this.sub3}
+     total marks   : ${this.totalMarks}
+     percentage    : ${this.percentage}
+     grade         : ${this.grade}`)}
+     
+ƒ (){
+    return this.print=console.log(` 
+     student id    : ${this.id} 
+     student name  : ${this.name}
+     marks in sub1 : ${this.sub1}
+     marks in sub2 : ${this.sub2}
+     marks in sub3 : ${…
+ReportCard.prototype.grade=function(){
+    if(this.percentage>=90){
+        console.log('A grade');
+    }
+        else if(this.percentage>=70 && this.percentage<90){
+                console.log('B grade');
+        }
+         else(this.percentage>=60 && this.percentage<70)?console.log('C grade'):console.log('Fail');
+   return this.grade;
+}
+              
+           
+ƒ (){
+    if(this.percentage>=90){
+        console.log('A grade');
+    }
+        else if(this.percentage>=70 && this.percentage<90){
+                console.log('B grade');
+        }
+         else(this…
+let ram=new ReportCard(1001,'ram',100,89,91);
+undefined
+ram;
+ReportCard {id: 1001, name: "ram", sub1: 100, sub2: 89, sub3: 91}
+ram.print;
+ƒ (){
+    return this.print=console.log(` 
+     student id    : ${this.id} 
+     student name  : ${this.name}
+     marks in sub1 : ${this.sub1}
+     marks in sub2 : ${this.sub2}
+     marks in sub3 : ${…
+ram.print();
+VM2711:2  
+     student id    : 1001 
+     student name  : ram
+     marks in sub1 : 100
+     marks in sub2 : 89
+     marks in sub3 : 91
+     total marks   : function(){
+    return this.total=this.sub1+this.sub2+this.sub3;
+}
+     percentage    : function(){
+     return this.percentage=(this.totalMarks/3)*100;
+}
+     grade         : function(){
+    if(this.percentage>=90){
+        console.log('A grade');
+    }
+        else if(this.percentage>=70 && this.percentage<90){
+                console.log('B grade');
+        }
+         else(this.percentage>=60 && this.percentage<70)?console.log('C grade'):console.log('Fail');
+   return this.grade;
+}
+undefined
+ram.total();
+VM2963:1 Uncaught TypeError: ram.total is not a function
+    at <anonymous>:1:5
+(anonymous) @ VM2963:1
+ram.totalMarks();
+280
+ram.percentage();
+NaN
+ReportCard.prototype.percentage=function(){
+     return this.percentage=(this.totalMarks()/3)*100;
+}
+ƒ (){
+     return this.percentage=(this.totalMarks()/3)*100;
+}
+ram.percentage();
+VM3087:1 Uncaught TypeError: ram.percentage is not a function
+    at <anonymous>:1:5
+(anonymous) @ VM3087:1
+ReportCard.prototype.percentage=function(){
+     return this.percent=(this.totalMarks()/3)*100;
+}
+ƒ (){
+     return this.percent=(this.totalMarks()/3)*100;
+}
+ram.percentage();
+VM3131:1 Uncaught TypeError: ram.percentage is not a function
+    at <anonymous>:1:5
+(anonymous) @ VM3131:1
+ReportCard.prototype.percentage=function(){
+     return this.percent=(this.total/3)*100;
+}
+ƒ (){
+     return this.percent=(this.total/3)*100;
+}
+ram.percentage();
+VM3186:1 Uncaught TypeError: ram.percentage is not a function
+    at <anonymous>:1:5
+(anonymous) @ VM3186:1
+ReportCard.prototype.percentage=function(){
+     return this.percent=(this.totalMarks()/3)*100;
+}
+ƒ (){
+     return this.percent=(this.totalMarks()/3)*100;
+}
+ram.percentage();
+VM3238:1 Uncaught TypeError: ram.percentage is not a function
+    at <anonymous>:1:5
+(anonymous) @ VM3238:1
+ReportCard.prototype.percentage=function(){
+     return this.percent=this.totalMarks()*0.30;
+}
+ƒ (){
+     return this.percent=this.totalMarks()*0.30;
+}
+ram.percentage();
+VM3299:1 Uncaught TypeError: ram.percentage is not a function
+    at <anonymous>:1:5
+(anonymous) @ VM3299:1
+let shyam=new ReportCard(1002,'shyam',100,91,79);
+undefined
+shyam;
+ReportCard {id: 1002, name: "shyam", sub1: 100, sub2: 91, sub3: 79}
+shyam.totalMarks();
+270
+shyam.percentage();
+81
+ReportCard.prototype.percentage=function(){
+     return this.percent=this.totalMarks()/3;
+}
+ƒ (){
+     return this.percent=this.totalMarks()/3;
+}
+shyam.percentage();
+90
+ReportCard.prototype.grade=function(){
+    if(this.percentage()>=90){
+        return ('A grade');
+    }
+        else if(this.percentage()>=70 && this.percentage()<90){
+                return('B grade');
+        }
+         else(this.percentage()>=60 && this.percentage()<70)?return('C grade'):return('Fail');
+}
+              
+           
+VM3707:8 Uncaught SyntaxError: Unexpected token return
+ReportCard.prototype.grade=function(){
+    if(this.percentage()>=90){
+        return A ;
+    }
+        else if(this.percentage()>=70 && this.percentage()<90){
+                return B;
+        }
+         else(this.percentage()>=60 && this.percentage()<70)?return C:return Fail;
+}
+              
+           
+VM3758:8 Uncaught SyntaxError: Unexpected token return
+ReportCard.prototype.grade=function(){
+    if(this.percentage()>=90){
+        console.log('A grade');
+    }
+        else if(this.percentage()>=70 && this.percentage()<90){
+                console.log('B grade');
+        }
+         else(this.percentage()>=60 && this.percentage()<70)?console.log('C grade'):console.log('Fail');
+}
+              
+           
+ƒ (){
+    if(this.percentage()>=90){
+        console.log('A grade');
+    }
+        else if(this.percentage()>=70 && this.percentage()<90){
+                console.log('B grade');
+        }
+         els…
+shyam.grade();
+VM3847:3 A grade
+undefined
+shyam.print();
+VM2711:2  
+     student id    : 1002 
+     student name  : shyam
+     marks in sub1 : 100
+     marks in sub2 : 91
+     marks in sub3 : 79
+     total marks   : function(){
+    return this.total=this.sub1+this.sub2+this.sub3;
+}
+     percentage    : function(){
+     return this.percent=this.totalMarks()/3;
+}
+     grade         : function(){
+    if(this.percentage()>=90){
+        console.log('A grade');
+    }
+        else if(this.percentage()>=70 && this.percentage()<90){
+                console.log('B grade');
+        }
+         else(this.percentage()>=60 && this.percentage()<70)?console.log('C grade'):console.log('Fail');
+}
+undefined
+ReportCard.prototype.print=function(){
+    return this.print=console.log(`
+     student id    : ${this.id} 
+     student name  : ${this.name}
+     marks in sub1 : ${this.sub1}
+     marks in sub2 : ${this.sub2}
+     marks in sub3 : ${this.sub3}
+     total marks   : ${this.totalMarks()}
+     percentage    : ${this.percentage()}
+     grade         : ${this.grade()}`)}
+     
+ƒ (){
+    return this.print=console.log(` 
+     student id    : ${this.id} 
+     student name  : ${this.name}
+     marks in sub1 : ${this.sub1}
+     marks in sub2 : ${this.sub2}
+     marks in sub3 : ${…
+shyam.print();
+VM4012:1 Uncaught TypeError: shyam.print is not a function
+    at <anonymous>:1:7
+(anonymous) @ VM4012:1
+let riya=new ReportCard(1003,'riya',100,80,60);
+undefined
+riya;
+ReportCard {id: 1003, name: "riya", sub1: 100, sub2: 80, sub3: 60}
+riya.totalMarks();
+240
+riya.percentage();
+80
+riya.grade();
+VM3847:6 B grade
+undefined
+riya.print();
+VM3847:6 B grade
+VM3979:2  
+     student id    : 1003 
+     student name  : riya
+     marks in sub1 : 100
+     marks in sub2 : 80
+     marks in sub3 : 60
+     total marks   : 240
+     percentage    : 80
+     grade         : undefined
+undefined
+ReportCard.prototype.grade=function(){
+    if(this.percentage()>=90){
+        console.log('A grade');
+    }
+        else if(this.percentage()>=70 && this.percentage()<90){
+                console.log('B grade');
+        }
+         else(this.percentage()>=60 && this.percentage()<70)?console.log('C grade'):console.log('Fail');
+  return this;
+}
+              
+           
+ƒ (){
+    if(this.percentage()>=90){
+        console.log('A grade');
+    }
+        else if(this.percentage()>=70 && this.percentage()<90){
+                console.log('B grade');
+        }
+         els…
+riya.print();
+VM4355:1 Uncaught TypeError: riya.print is not a function
+    at <anonymous>:1:6
+(anonymous) @ VM4355:1
+riya.grade();
+VM4320:6 B grade
+ReportCard {id: 1003, name: "riya", sub1: 100, sub2: 80, sub3: 60, …}
+riya=new ReportCard(1005,'riya',100,80,60);
+ReportCard {id: 1005, name: "riya", sub1: 100, sub2: 80, sub3: 60}
+riya.totalMarks();
+240
+riya.percentage();
+80
+riya.grade();
+VM4320:6 B grade
+ReportCard {id: 1005, name: "riya", sub1: 100, sub2: 80, sub3: 60, …}
+riya.print();
+VM4320:6 B grade
+VM3979:2  
+     student id    : 1005 
+     student name  : riya
+     marks in sub1 : 100
+     marks in sub2 : 80
+     marks in sub3 : 60
+     total marks   : 240
+     percentage    : 80
+     grade         : [object Object]
+undefined
+ReportCard.prototype.grade=function(){
+    if(this.percentage()>=90){
+        return 'A grade';
+    }
+        else if(this.percentage()>=70 && this.percentage()<90){
+                return 'B grade';
+        }
+         else(this.percentage()>=60 && this.percentage()<70)?return 'C grade':return 'Fail';
+  return this;
+}
+              
+           
+VM4782:8 Uncaught SyntaxError: Unexpected token return
+ReportCard.prototype.grade=function(){
+    if(this.percentage()>=90){
+        return 'A grade';
+    }
+        else if(this.percentage()>=70 && this.percentage()<90){
+                return 'B grade';
+        }
+         else(this.percentage()>=60 && this.percentage()<70)?return 'C grade':return 'Fail';
+}
+              
+           
+VM4802:8 Uncaught SyntaxError: Unexpected token return
+ReportCard.prototype.grade=function(){
+    if(this.percentage()>=90){
+        return 'A grade';
+    }
+        else if(this.percentage()>=70 && this.percentage()<90){
+                return 'B grade';
+        }
+         else if(this.percentage()>=60 && this.percentage()<70)?return 'C grade':return 'Fail';
+}
+              
+           
+VM4812:8 Uncaught SyntaxError: Unexpected token ?
+ReportCard.prototype.grade=function(){
+    if(this.percentage()>=90){
+        return 'A grade';
+    }
+        else if(this.percentage()>=70 && this.percentage()<90){
+                return 'B grade';
+        }
+         else if(this.percentage()>=60 && this.percentage()<70)
+            return 'C grade'
+         else
+          return 'Fail';
+}
+              
+           
+ƒ (){
+    if(this.percentage()>=90){
+        return 'A grade';
+    }
+        else if(this.percentage()>=70 && this.percentage()<90){
+                return 'B grade';
+        }
+         else if(this.pe…
+riya.print();
+VM4898:1 Uncaught TypeError: riya.print is not a function
+    at <anonymous>:1:6
+(anonymous) @ VM4898:1
+riya=new ReportCard(1005,'riya',100,80,60);
+ReportCard {id: 1005, name: "riya", sub1: 100, sub2: 80, sub3: 60}
+riya.totalMarks();
+240
+riya.percentage();
+80
+riya.grade();
+"B grade"
+riya.print();
+VM3979:2  
+     student id    : 1005 
+     student name  : riya
+     marks in sub1 : 100
+     marks in sub2 : 80
+     marks in sub3 : 60
+     total marks   : 240
+     percentage    : 80
+     grade         : B grade
+undefined
+riya=new ReportCard(1005,'riya',100,60,52);
+ReportCard {id: 1005, name: "riya", sub1: 100, sub2: 60, sub3: 52}
+riya.print();
+VM3979:2  
+     student id    : 1005 
+     student name  : riya
+     marks in sub1 : 100
+     marks in sub2 : 60
+     marks in sub3 : 52
+     total marks   : 212
+     percentage    : 70.66666666666667
+     grade         : B grade
+undefined
+riya=new ReportCard(1005,'riya',80,60,52);
+ReportCard {id: 1005, name: "riya", sub1: 80, sub2: 60, sub3: 52}
+riya.print();
+VM3979:2  
+     student id    : 1005 
+     student name  : riya
+     marks in sub1 : 80
+     marks in sub2 : 60
+     marks in sub3 : 52
+     total marks   : 192
+     percentage    : 64
+     grade         : C grade
+undefined
+riya=new ReportCard(1005,'riya',54,60,52);
+ReportCard {id: 1005, name: "riya", sub1: 54, sub2: 60, sub3: 52}
+riya.print();
+VM3979:2  
+     student id    : 1005 
+     student name  : riya
+     marks in sub1 : 54
+     marks in sub2 : 60
+     marks in sub3 : 52
+     total marks   : 166
+     percentage    : 55.333333333333336
+     grade         : Fail
+undefined
+function ReportCard(id,name,sub1,sub2,sub3){
+    this.id=id;
+    this.name=name;
+    this.sub1=sub1;
+    this.sub2=sub2;
+    this.sub3=sub3;
+}
+undefined
+ReportCard.prototype.totalMarks=function(){
+    return this.total=this.sub1+this.sub2+this.sub3;
+}
+ƒ (){
+    return this.total=this.sub1+this.sub2+this.sub3;
+}
+ReportCard.prototype.percentage=function(){
+     return this.percent=this.totalMarks()/3;
+}
+ƒ (){
+     return this.percent=this.totalMarks()/3;
+}
+ReportCard.prototype.grade=function(){
+    if(this.percentage()>=90)
+               return 'A grade';
+        else if(this.percentage()>=70 && this.percentage()<90)
+                return 'B grade';
+         else if(this.percentage()>=60 && this.percentage()<70)
+                return 'C grade'
+    else
+                return 'Fail';
+}
+              
+ƒ (){
+    if(this.percentage()>=90)
+               return 'A grade';
+        else if(this.percentage()>=70 && this.percentage()<90)
+                return 'B grade';
+         else if(this.percentage()>…
+ReportCard.prototype.print=function(){
+    return this.print=console.log(`
+     student id    : ${this.id} 
+     student name  : ${this.name}
+     marks in sub1 : ${this.sub1}
+     marks in sub2 : ${this.sub2}
+     marks in sub3 : ${this.sub3}
+     total marks   : ${this.totalMarks()}
+     percentage    : ${this.percentage()}
+     grade         : ${this.grade()}`)}
+     
+ƒ (){
+    return this.print=console.log(`
+     student id    : ${this.id} 
+     student name  : ${this.name}
+     marks in sub1 : ${this.sub1}
+     marks in sub2 : ${this.sub2}
+     marks in sub3 : ${t…
+let shreya=new ReportCard(1007,'shreya',99,86,79);
+undefined
+shreya;
+ReportCard {id: 1007, name: "shreya", sub1: 99, sub2: 86, sub3: 79}
+typeof shreya;
+"object"
+shreya instanceof Object;
+true
+shreya instanceof Function;
+false
+shreya instanceof ReportCard;
+true
+console.dir(shreya);
+VM5871:1 ReportCardid: 1007name: "shreya"sub1: 99sub2: 86sub3: 79__proto__: Objectgrade: ƒ ()percentage: ƒ ()print: ƒ ()totalMarks: ƒ ()constructor: ƒ ReportCard(id,name,sub1,sub2,sub3)__proto__: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+undefined
+console.dir(ReportCard);
+VM5924:1 ƒ ReportCard(id,name,sub1,sub2,sub3)arguments: nullcaller: nulllength: 5name: "ReportCard"prototype: {totalMarks: ƒ, percentage: ƒ, grade: ƒ, print: ƒ, constructor: ƒ}grade: ƒ ()percentage: ƒ ()print: ƒ ()totalMarks: ƒ ()constructor: ƒ ReportCard(id,name,sub1,sub2,sub3)__proto__: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()__proto__: ƒ ()apply: ƒ apply()arguments: (...)bind: ƒ bind()call: ƒ call()caller: (...)constructor: ƒ Function()length: 0name: ""toString: ƒ toString()Symbol(Symbol.hasInstance): ƒ [Symbol.hasInstance]()get arguments: ƒ ()set arguments: ƒ ()get caller: ƒ ()set caller: ƒ ()__proto__: Object[[FunctionLocation]]: <unknown>[[Scopes]]: Scopes[0][[FunctionLocation]]: VM5368:1[[Scopes]]: Scopes[2]
+undefined
+shreya.totalMarks();
+264
+shreya.percentage();
+88
+shreya.grade();
+"B grade"
+shreya.print();
+VM5434:2 
+     student id    : 1007 
+     student name  : shreya
+     marks in sub1 : 99
+     marks in sub2 : 86
+     marks in sub3 : 79
+     total marks   : 264
+     percentage    : 88
+     grade         : B grade
+undefined
+class StudentReport{
+    constructor(){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+    this.total(){
+VM6460:10 Uncaught SyntaxError: Unexpected token .
+class StudentReport{
+    constructor(){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+    this.total=function(){
+VM6502:10 Uncaught SyntaxError: Unexpected token .
+class StudentReport{
+    constructor(){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+    this.total=function(){
+       return this.total=sub1+sub2+sub3;
+VM6620:10 Uncaught SyntaxError: Unexpected token .
+class StudentReport{
+    constructor(){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+this.total=function(){
+       return this.total=sub1+sub2+sub3;
+    }
+
+this.percentage=function(){
+    return this.percentage=this.total()/3;
+   }
+
+this.grade=function(){
+           if(this.percentage()>=90)
+              return 'grade A';
+           else if(this.percentage()>=70 && this.percentage()<90)
+              return 'grade B';
+           else if(this.percentage()>=60 && this.percentage()<70)
+              return 'grade C';
+           else
+              return 'Fail';
+    }
+
+this.print=function(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}
+}
+
+VM7804:10 Uncaught SyntaxError: Unexpected token .
+class StudentReport{
+    constructor(){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+this.total=function(){
+       return this.total=sub1+sub2+sub3;
+    }
+
+this.percentage=function(){
+    return this.percentage=this.total()/3;
+   }
+
+this.grade=function(){
+           if(this.percentage()>=90)
+              return 'grade A';
+           else if(this.percentage()>=70 && this.percentage()<90)
+              return 'grade B';
+           else if(this.percentage()>=60 && this.percentage()<70)
+              return 'grade C';
+           else
+              return 'Fail';
+    }
+
+this.print=function(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`
+}
+
+VM7812:10 Uncaught SyntaxError: Unexpected token .
+class StudentReport{
+    constructor(){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+this.total=function(){
+       return this.total=sub1+sub2+sub3;
+    }
+
+this.percentage=function(){
+    return this.percentage=this.total()/3;
+   }
+
+this.grade=function(){
+           if(this.percentage()>=90)
+              return 'grade A';
+           else if(this.percentage()>=70 && this.percentage()<90)
+              return 'grade B';
+           else if(this.percentage()>=60 && this.percentage()<70)
+              return 'grade C';
+           else
+              return 'Fail';
+    }
+
+return this.print=function(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`
+}
+
+VM7825:10 Uncaught SyntaxError: Unexpected token .
+class StudentReport{
+    constructor(){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       console.log(`total marks : ${sub1+sub2+sub3}`);
+    }
+
+percentage(){
+    console.log(`percentage : ${total()/3}`);
+   }
+
+grade(){
+           if(percentage()>=90)
+              console.log('grade A');
+           else if(percentage()>=70 && percentage()<90)
+              console.log('grade B');
+           else if(percentage()>=60 && percentage()<70)
+              console.log('grade C');
+           else
+              console.log('Fail');
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`
+}
+
+VM8155:38 Uncaught SyntaxError: missing ) after argument list
+class StudentReport{
+    constructor(){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       console.log(`total marks : ${sub1+sub2+sub3}`);
+    }
+
+percentage(){
+    console.log(`percentage : ${total()/3}`);
+   }
+
+grade(){
+           if(percentage()>=90)
+              console.log('grade A');
+           else if(percentage()>=70 && percentage()<90)
+              console.log('grade B');
+           else if(percentage()>=60 && percentage()<70)
+              console.log('grade C');
+           else
+              console.log('Fail');
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`);
+}
+
+VM8162:40 Uncaught SyntaxError: Unexpected end of input
+class StudentReport{
+    constructor(id,name,sub1,sub2,sub3){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       console.log(`total marks : ${sub1+sub2+sub3}`);
+    }
+
+percentage(){
+    console.log(`percentage : ${total()/3}`);
+   }
+
+grade(){
+           if(percentage()>=90)
+              console.log('grade A');
+           else if(percentage()>=70 && percentage()<90)
+              console.log('grade B');
+           else if(percentage()>=60 && percentage()<70)
+              console.log('grade C');
+           else
+              console.log('Fail');
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`);
+}
+
+VM8257:40 Uncaught SyntaxError: Unexpected end of input
+class StudentReport{
+    constructor(id,name,sub1,sub2,sub3){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       console.log(`total marks : ${sub1+sub2+sub3}`);
+    }
+
+percentage(){
+    console.log(`percentage : ${total()/3}`);
+   }
+
+grade(){
+           if(percentage()>=90)
+              console.log('grade A');
+           else if(percentage()>=70 && percentage()<90)
+              console.log('grade B');
+           else if(percentage()>=60 && percentage()<70)
+              console.log('grade C');
+           else
+              console.log('Fail');
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`);
+}
+}
+
+undefined
+let neha=new StudentReport(1001,'neha',78,90,84);
+undefined
+neha;
+StudentReport {id: 1001, name: "neha", sub1: 78, sub2: 90, sub3: 84}
+typeof neha;
+"object"
+neha instanceof Object;
+true
+neha instanceof CLASSES;
+VM8507:1 Uncaught TypeError: Right-hand side of 'instanceof' is not callable
+    at <anonymous>:1:6
+(anonymous) @ VM8507:1
+neha instanceof Function;
+false
+neha instanceof StudentReport;
+true
+neha.print();
+VM8265:11 Uncaught ReferenceError: sub1 is not defined
+    at StudentReport.total (<anonymous>:11:37)
+    at StudentReport.print (<anonymous>:36:33)
+    at <anonymous>:1:6
+total @ VM8265:11
+print @ VM8265:36
+(anonymous) @ VM8631:1
+class StudentReport{
+    constructor(id,name,sub1,sub2,sub3){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       console.log(`total marks : ${this.sub1+this.sub2+this.sub3}`);
+    }
+
+percentage(){
+    console.log(`percentage : ${total()/3}`);
+   }
+
+grade(){
+           if(percentage()>=90)
+              console.log('grade A');
+           else if(percentage()>=70 && percentage()<90)
+              console.log('grade B');
+           else if(percentage()>=60 && percentage()<70)
+              console.log('grade C');
+           else
+              console.log('Fail');
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`);
+}
+}
+
+VM8685:1 Uncaught SyntaxError: Identifier 'StudentReport' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM8685:1
+class StudentRepor{
+    constructor(id,name,sub1,sub2,sub3){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       console.log(`total marks : ${this.sub1+this.sub2+this.sub3}`);
+    }
+
+percentage(){
+    console.log(`percentage : ${total()/3}`);
+   }
+
+grade(){
+           if(percentage()>=90)
+              console.log('grade A');
+           else if(percentage()>=70 && percentage()<90)
+              console.log('grade B');
+           else if(percentage()>=60 && percentage()<70)
+              console.log('grade C');
+           else
+              console.log('Fail');
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`);
+}
+}
+
+undefined
+neha=new StudentRepor(1001,'neha',100,78,92);
+StudentRepor {id: 1001, name: "neha", sub1: 100, sub2: 78, sub3: 92}
+neha.print();
+VM8689:11 total marks : 270
+VM8689:15 Uncaught ReferenceError: total is not defined
+    at StudentRepor.percentage (<anonymous>:15:17)
+    at StudentRepor.print (<anonymous>:37:33)
+    at <anonymous>:1:6
+percentage @ VM8689:15
+print @ VM8689:37
+(anonymous) @ VM8815:1
+class StudentReport{
+    constructor(id,name,sub1,sub2,sub3){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       console.log(`total marks : ${this.sub1+this.sub2+this.sub3}`);
+    }
+
+percentage(){
+    console.log(`percentage : ${this.total()/3}`);
+   }
+
+grade(){
+           if(this.percentage()>=90)
+              console.log('grade A');
+           else if(this.percentage()>=70 && this.percentage()<90)
+              console.log('grade B');
+           else if(this.percentage()>=60 && this.percentage()<70)
+              console.log('grade C');
+           else
+              console.log('Fail');
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`);
+}
+}
+
+VM8898:1 Uncaught SyntaxError: Identifier 'StudentReport' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM8898:1
+class Student{
+    constructor(id,name,sub1,sub2,sub3){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       console.log(`total marks : ${this.sub1+this.sub2+this.sub3}`);
+    }
+
+percentage(){
+    console.log(`percentage : ${this.total()/3}`);
+   }
+
+grade(){
+           if(this.percentage()>=90)
+              console.log('grade A');
+           else if(this.percentage()>=70 && this.percentage()<90)
+              console.log('grade B');
+           else if(this.percentage()>=60 && this.percentage()<70)
+              console.log('grade C');
+           else
+              console.log('Fail');
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`);
+}
+}
+
+undefined
+neha=new Student(1001,'neha',100,92,86);
+Student {id: 1001, name: "neha", sub1: 100, sub2: 92, sub3: 86}
+neha.print();
+VM8940:11 total marks : 278
+VM8940:11 total marks : 278
+VM8940:15 percentage : NaN
+VM8940:11 total marks : 278
+VM8940:15 percentage : NaN
+VM8940:11 total marks : 278
+VM8940:15 percentage : NaN
+VM8940:11 total marks : 278
+VM8940:15 percentage : NaN
+VM8940:26 Fail
+VM8940:30 
+         student id    : 1001
+         student name  : neha
+         marks in sub1 : 100
+         marks in sub2 : 92
+         marks in sub3 : 86
+         total marks   : undefined
+         percentage    : undefined
+         grade         : undefined
+undefined
+class StudentReport{
+    constructor(id,name,sub1,sub2,sub3){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       console.log(`${this.sub1+this.sub2+this.sub3}`);
+    }
+
+percentage(){
+    console.log(`${this.total()/3}`);
+   }
+
+grade(){
+           if(this.percentage()>=90)
+              console.log('grade A');
+           else if(this.percentage()>=70 && this.percentage()<90)
+              console.log('grade B');
+           else if(this.percentage()>=60 && this.percentage()<70)
+              console.log('grade C');
+           else
+              console.log('Fail');
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`);
+}
+}
+
+VM9148:1 Uncaught SyntaxError: Identifier 'StudentReport' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM9148:1
+class StudentR{
+    constructor(id,name,sub1,sub2,sub3){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       console.log(`${this.sub1+this.sub2+this.sub3}`);
+    }
+
+percentage(){
+    console.log(`${this.total()/3}`);
+   }
+
+grade(){
+           if(this.percentage()>=90)
+              console.log('grade A');
+           else if(this.percentage()>=70 && this.percentage()<90)
+              console.log('grade B');
+           else if(this.percentage()>=60 && this.percentage()<70)
+              console.log('grade C');
+           else
+              console.log('Fail');
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`);
+}
+}
+
+undefined
+neha=new Student(1001,'neha',100,92,86);
+Student {id: 1001, name: "neha", sub1: 100, sub2: 92, sub3: 86}
+neha.print();
+VM8940:11 total marks : 278
+VM8940:11 total marks : 278
+VM8940:15 percentage : NaN
+VM8940:11 total marks : 278
+VM8940:15 percentage : NaN
+VM8940:11 total marks : 278
+VM8940:15 percentage : NaN
+VM8940:11 total marks : 278
+VM8940:15 percentage : NaN
+VM8940:26 Fail
+VM8940:30 
+         student id    : 1001
+         student name  : neha
+         marks in sub1 : 100
+         marks in sub2 : 92
+         marks in sub3 : 86
+         total marks   : undefined
+         percentage    : undefined
+         grade         : undefined
+undefined
+class StudentReport{
+    constructor(){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       return this.total=sub1+sub2+sub3;
+    }
+
+percentage(){
+    return this.percentage=this.total()/3;
+   }
+
+grade(){
+           if(this.percentage()>=90)
+              return 'grade A';
+           else if(this.percentage()>=70 && this.percentage()<90)
+              return 'grade B';
+           else if(this.percentage()>=60 && this.percentage()<70)
+              return 'grade C';
+           else
+              return 'Fail';
+    }
+
+return this.print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`
+}
+
+VM9268:29 Uncaught SyntaxError: Unexpected token this
+class StudentReport{
+    constructor(){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       return this.total=sub1+sub2+sub3;
+    }
+
+percentage(){
+    return this.percentage=this.total()/3;
+   }
+
+grade(){
+           if(this.percentage()>=90)
+              return 'grade A';
+           else if(this.percentage()>=70 && this.percentage()<90)
+              return 'grade B';
+           else if(this.percentage()>=60 && this.percentage()<70)
+              return 'grade C';
+           else
+              return 'Fail';
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`
+}
+
+VM9280:38 Uncaught SyntaxError: missing ) after argument list
+class StudentReport{
+    constructor(){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       return this.total=sub1+sub2+sub3;
+    }
+
+percentage(){
+    return this.percentage=this.total()/3;
+   }
+
+grade(){
+           if(this.percentage()>=90)
+              return 'grade A';
+           else if(this.percentage()>=70 && this.percentage()<90)
+              return 'grade B';
+           else if(this.percentage()>=60 && this.percentage()<70)
+              return 'grade C';
+           else
+              return 'Fail';
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`);
+}
+}
+
+VM9289:1 Uncaught SyntaxError: Identifier 'StudentReport' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM9289:1
+class StudentRepo{
+    constructor(){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       return this.total=sub1+sub2+sub3;
+    }
+
+percentage(){
+    return this.percentage=this.total()/3;
+   }
+
+grade(){
+           if(this.percentage()>=90)
+              return 'grade A';
+           else if(this.percentage()>=70 && this.percentage()<90)
+              return 'grade B';
+           else if(this.percentage()>=60 && this.percentage()<70)
+              return 'grade C';
+           else
+              return 'Fail';
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`);
+}
+}
+
+undefined
+neha=new StudentRepor(1001,'neha',100,78,92);
+StudentRepor {id: 1001, name: "neha", sub1: 100, sub2: 78, sub3: 92}
+neha.print();
+VM8689:11 total marks : 270
+VM8689:15 Uncaught ReferenceError: total is not defined
+    at StudentRepor.percentage (<anonymous>:15:17)
+    at StudentRepor.print (<anonymous>:37:33)
+    at <anonymous>:1:6
+percentage @ VM8689:15
+print @ VM8689:37
+(anonymous) @ VM9353:1
+class StudentRep{
+    constructor(){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       return this.total=this.sub1+this.sub2+this.sub3;
+    }
+
+percentage(){
+    return this.percentage=this.total()/3;
+   }
+
+grade(){
+           if(this.percentage()>=90)
+              return 'grade A';
+           else if(this.percentage()>=70 && this.percentage()<90)
+              return 'grade B';
+           else if(this.percentage()>=60 && this.percentage()<70)
+              return 'grade C';
+           else
+              return 'Fail';
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`);
+}
+}
+
+undefined
+neha=new StudentRepor(1001,'neha',100,78,92);
+StudentRepor {id: 1001, name: "neha", sub1: 100, sub2: 78, sub3: 92}
+neha.print();
+VM8689:11 total marks : 270
+VM8689:15 Uncaught ReferenceError: total is not defined
+    at StudentRepor.percentage (<anonymous>:15:17)
+    at StudentRepor.print (<anonymous>:37:33)
+    at <anonymous>:1:6
+percentage @ VM8689:15
+print @ VM8689:37
+(anonymous) @ VM9436:1
+class StudentRe{
+    constructor(){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       return total=this.sub1+this.sub2+this.sub3;
+    }
+
+percentage(){
+    return percentage=this.total()/3;
+   }
+
+grade(){
+           if(this.percentage()>=90)
+              return 'grade A';
+           else if(this.percentage()>=70 && this.percentage()<90)
+              return 'grade B';
+           else if(this.percentage()>=60 && this.percentage()<70)
+              return 'grade C';
+           else
+              return 'Fail';
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`);
+}
+}
+
+undefined
+neha=new StudentRe(1001,'neha',100,78,92);
+VM9460:3 Uncaught ReferenceError: id is not defined
+    at new StudentRe (<anonymous>:3:17)
+    at <anonymous>:1:6
+StudentRe @ VM9460:3
+(anonymous) @ VM9482:1
+class Studen{
+    constructor(id,name,sub1,sub2,sub3){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       return total=this.sub1+this.sub2+this.sub3;
+    }
+
+percentage(){
+    return percentage=this.total()/3;
+   }
+
+grade(){
+           if(this.percentage()>=90)
+              return 'grade A';
+           else if(this.percentage()>=70 && this.percentage()<90)
+              return 'grade B';
+           else if(this.percentage()>=60 && this.percentage()<70)
+              return 'grade C';
+           else
+              return 'Fail';
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`);
+}
+}
+
+undefined
+neha=new Studen(1001,'neha',98,88,78);
+Studen {id: 1001, name: "neha", sub1: 98, sub2: 88, sub3: 78}
+neha.print();
+VM9581:11 Uncaught ReferenceError: total is not defined
+    at Studen.total (<anonymous>:11:20)
+    at Studen.print (<anonymous>:36:33)
+    at <anonymous>:1:6
+total @ VM9581:11
+print @ VM9581:36
+(anonymous) @ VM9721:1
+class Stude{
+    constructor(id,name,sub1,sub2,sub3){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       return this.total=this.sub1+this.sub2+this.sub3;
+    }
+
+percentage(){
+    return this.percentage=this.total()/3;
+   }
+
+grade(){
+           if(this.percentage()>=90)
+              return 'grade A';
+           else if(this.percentage()>=70 && this.percentage()<90)
+              return 'grade B';
+           else if(this.percentage()>=60 && this.percentage()<70)
+              return 'grade C';
+           else
+              return 'Fail';
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`);
+}
+}
+
+undefined
+neha=Stude(1001,'neha',90,89,78);
+VM9926:1 Uncaught TypeError: Class constructor Stude cannot be invoked without 'new'
+    at <anonymous>:1:6
+(anonymous) @ VM9926:1
+neha=new Stude(1001,'neha',90,89,78);
+Stude {id: 1001, name: "neha", sub1: 90, sub2: 89, sub3: 78}
+neha.print();
+VM9833:15 Uncaught TypeError: this.total is not a function
+    at Stude.percentage (<anonymous>:15:33)
+    at Stude.print (<anonymous>:37:33)
+    at <anonymous>:1:6
+percentage @ VM9833:15
+print @ VM9833:37
+(anonymous) @ VM9974:1
+class Stud{
+    constructor(id,name,sub1,sub2,sub3){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       return(this.sub1+this.sub2+this.sub3);
+    }
+
+percentage(){
+    return(this.total()/3);
+   }
+
+grade(){
+           if(this.percentage()>=90)
+              return 'grade A';
+           else if(this.percentage()>=70 && this.percentage()<90)
+              return 'grade B';
+           else if(this.percentage()>=60 && this.percentage()<70)
+              return 'grade C';
+           else
+              return 'Fail';
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`);
+}
+}
+
+undefined
+neha=new stud(1001,'neha',90,89,98);
+VM10117:1 Uncaught ReferenceError: stud is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM10117:1
+neha=new Stud(1001,'neha',90,89,78);
+Stud {id: 1001, name: "neha", sub1: 90, sub2: 89, sub3: 78}
+neha.print();
+VM10022:30 
+         student id    : 1001
+         student name  : neha
+         marks in sub1 : 90
+         marks in sub2 : 89
+         marks in sub3 : 78
+         total marks   : 257
+         percentage    : 85.66666666666667
+         grade         : grade B
+undefined
+class StudReport{
+    constructor(id,name,sub1,sub2,sub3){
+        this.id=id;
+        this.name=name;
+        this.sub1=sub1;
+        this.sub2=sub2;
+        this.sub3=sub3;
+    }
+    
+total(){
+       return(this.sub1+this.sub2+this.sub3);
+    }
+
+percentage(){
+    return(this.total()/3);
+   }
+
+grade(){
+           if(this.percentage()>=90)
+              return 'grade A';
+           else if(this.percentage()>=70 && this.percentage()<90)
+              return 'grade B';
+           else if(this.percentage()>=60 && this.percentage()<70)
+              return 'grade C';
+           else
+              return 'Fail';
+    }
+
+print(){
+         console.log(`
+         student id    : ${this.id}
+         student name  : ${this.name}
+         marks in sub1 : ${this.sub1}
+         marks in sub2 : ${this.sub2}
+         marks in sub3 : ${this.sub3}
+         total marks   : ${this.total()}
+         percentage    : ${this.percentage()}
+         grade         : ${this.grade()}`);
+}
+}
+
+undefined
+let kriti=new StudReport(1004,'kriti',90,89,78.5);
+undefined
+typeof kriti;
+"object"
+kriti instanceof Object;
+true
+kriti instanceof Function;
+false
+kriti instanceof StudReport;
+true
+kriti instanceof Stud;
+false
+kriti;
+StudReport {id: 1004, name: "kriti", sub1: 90, sub2: 89, sub3: 78.5}
+kriti.total();
+257.5
+kriti.percentage();
+85.83333333333333
+kriti.grade();
+"grade B"
+kriti.print();
+VM10262:30 
+         student id    : 1004
+         student name  : kriti
+         marks in sub1 : 90
+         marks in sub2 : 89
+         marks in sub3 : 78.5
+         total marks   : 257.5
+         percentage    : 85.83333333333333
+         grade         : grade B
+undefined
