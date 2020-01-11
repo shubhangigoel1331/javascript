@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+        function opr(operand){
+        console.log("i am takevalue ");
+        var first=document.getElementById('first').value;
+        var second=document.querySelector('#second').value;
+       // sum=parseInt(first)+parseInt(second);
+        sum=eval(parseInt(first)+operand+parseInt(second));
+        document.querySelector('#result').innerHTML=isNaN(sum)?0:sum;
+        }
+
+        function empty(){
+            console.log("i am clear");
+           document.querySelector('#result').innerHTML=" ";
+           document.querySelector('#first').value=null;
+           document.querySelector('#second').value=null;
+        }
+    </script>
+</head>
+<body>
+    <h1>CALC APP</h1>
+    <label for="" >First Number</label>&emsp;
+    <input id= 'first' type='text' placeholder="Enter first number"/>
+    <br/><br/>
+    <label for="">Second Number</label>
+    <input id='second' type='text' placeholder="Enter second number"/>
+    <br/><br/> 
+    <button onclick="opr('+')">+</button>
+    <button onclick="opr('-')">-</button>
+    <button onclick="opr('*')">*</button>
+    <button onclick="opr('/')">/</button>
+    <button onclick="empty()">clear All</button>
+    <h4 id='result'></h4>
+</body>
+</html>
