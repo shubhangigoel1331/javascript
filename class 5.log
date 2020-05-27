@@ -1,0 +1,341 @@
+var arr=[1,2,3,4,5,6,7]
+undefined
+arr.forEach(ele=>console.log(ele+1));
+VM220:1 2
+VM220:1 3
+VM220:1 4
+VM220:1 5
+VM220:1 6
+VM220:1 7
+VM220:1 8
+undefined
+function printEle(ele){
+    console.log(`ele is ${ele+10}`);
+}
+undefined
+arr.forEach(ele=>printEle(ele));
+VM438:2 ele is 11
+VM438:2 ele is 12
+VM438:2 ele is 13
+VM438:2 ele is 14
+VM438:2 ele is 15
+VM438:2 ele is 16
+VM438:2 ele is 17
+undefined
+arr=[90,10,30,45,2,15,64];
+(7) [90, 10, 30, 45, 2, 15, 64]
+arr.sort((a,b)=>a-b));
+VM697:1 Uncaught SyntaxError: Unexpected token ')'
+arr.sort((a,b)=>a-b);
+(7) [2, 10, 15, 30, 45, 64, 90]
+arr.sort((a,b)=>b-a);
+(7) [90, 64, 45, 30, 15, 10, 2]
+//sorting string
+"ram".localeCompare("ramesh");
+-1
+"ram".localeCompare("raj");
+1
+"ram".localeCompare("ram");
+0
+var names=["shubhangi","ankita","isha","karan","manan"];
+undefined
+arr.sort((a,b)=>a.localeCompare(b));
+names.sort((a,b)=>a.localeCompare(b));
+(5) ["ankita", "isha", "karan", "manan", "shubhangi"]
+names.sort((a,b)=>b.localeCompare(a));
+(5) ["shubhangi", "manan", "karan", "isha", "ankita"]
+// Reduce function in array
+undefined
+var arr=[90,20,49,56,13,2,70];
+undefined
+arr.reduce((acc,ele)=>acc+=ele,acc=0);
+300
+//max
+arr.reduce((acc,ele)=>{
+if(ele>acc){
+acc=ele;
+}
+return acc;
+},acc=arr[0]);
+90
+//min
+arr.reduce((acc,ele)=>{
+if(ele<acc){
+acc=ele;
+}
+return acc;
+},acc=arr[0]);
+2
+//reduce as filter
+arr=[10,90,45,90,60,30,90,20];
+(8) [10, 90, 45, 90, 60, 30, 90, 20]
+arr.filter(ele=>ele==90);
+(3) [90, 90, 90]
+arr.reduce((acc,ele)=>{
+if(ele==90){
+acc=ele;
+}
+return acc;
+},acc=[]);
+90
+arr.reduce((acc,ele)=>{
+if(ele==90){
+acc.push(ele);
+}
+return acc;
+},acc=[]);
+(3) [90, 90, 90]
+arr.reduce((acc,ele)=>{
+    if(ele!=90){
+        acc+=ele;
+    }
+    return acc;
+}
+VM3018:6 Uncaught SyntaxError: missing ) after argument list
+    at <anonymous>:1:19
+    at Array.sort (<anonymous>)
+    at <anonymous>:1:5
+(anonymous) @ VM1290:1
+(anonymous) @ VM1290:1
+arr.reduce((acc,ele)=>{
+    if(ele!=90){
+        acc+=ele;
+    }
+    return acc;
+},acc=[]);
+"1045603020"
+arr.reduce((acc,ele)=>{
+    if(ele!=90){
+        acc.push(ele);
+    }
+    return acc;
+},acc=[]);
+(5) [10, 45, 60, 30, 20]
+//2 largest element
+var firstLargest=arr.reduce((acc,ele)=>{
+if(ele>acc){
+acc=ele;
+}
+return acc;
+},acc=arr[0]);
+undefined
+firstLargest;
+90
+var secondLargest=arr.reduce((acc,ele)=>{
+if(ele!=firstLargest && ele>acc){
+acc=ele;
+}
+return acc;
+},acc=arr[0]);
+
+undefined
+secondLargest;
+60
+arr;
+(8) [10, 90, 45, 90, 60, 30, 90, 20]
+var noList=arr.reduce((acc,ele)=>{
+if(ele>acc){
+acc.push(ele);
+}
+return acc;
+},acc=[]);
+undefined
+noList;
+(2) [10, 90]
+//reduce as map
+arr.reduce((acc,ele)=>{
+acc.push(`Rs. ${ele}.00`);
+
+return acc;
+},acc=[]);
+(8) ["Rs. 10.00", "Rs. 90.00", "Rs. 45.00", "Rs. 90.00", "Rs. 60.00", "Rs. 30.00", "Rs. 90.00", "Rs. 20.00"]
+arr.reduce((acc,ele)=>{
+acc.push(`Rs. ${ele}.00`);
+return acc;
+},acc=[]);
+(8) ["Rs. 10.00", "Rs. 90.00", "Rs. 45.00", "Rs. 90.00", "Rs. 60.00", "Rs. 30.00", "Rs. 90.00", "Rs. 20.00"]
+var a=10;
+undefined
+var  b=20;
+undefined
+`sum is ${a+b}`
+"sum is 30"
+arr;
+(8) [10, 90, 45, 90, 60, 30, 90, 20]
+arr.splice(1,2);
+(2) [90, 45]
+arr.splice(0,1);
+[10]
+//Objects in JS
+undefined
+var obj={id:101,name:"shubhs"};
+undefined
+obj.id;
+101
+obj["id"];
+101
+obj.name;
+"shubhs"
+//numeric key
+undefined
+var obj1={1:123,2:234,3:345};
+undefined
+obj1;
+{1: 123, 2: 234, 3: 345}
+obj1.1;
+VM4730:1 Uncaught SyntaxError: Unexpected number
+    at <anonymous>:1:19
+    at Array.sort (<anonymous>)
+    at <anonymous>:1:5
+(anonymous) @ VM1290:1
+(anonymous) @ VM1290:1
+obj1[1];
+123
+//special key
+var obj2={'a b':"hey",c:"bye"};
+undefined
+obj2;
+{a b: "hey", c: "bye"}
+obj2.a b;
+VM4916:1 Uncaught SyntaxError: Unexpected identifier
+    at <anonymous>:1:19
+    at Array.sort (<anonymous>)
+    at <anonymous>:1:5
+(anonymous) @ VM1290:1
+(anonymous) @ VM1290:1
+obj2["a b"];
+"hey"
+var obj={};
+undefined
+obj.id=101;
+101
+obj.name="shubhs";
+"shubhs"
+obj.phone="1234";
+"1234"
+obj;
+{id: 101, name: "shubhs", phone: "1234"}
+delete obj.name;
+true
+obj;
+{id: 101, phone: "1234"}
+typeof obj;
+"object"
+obj instanceof Object;
+true
+obj instanceof Function;
+false
+Object instanceof Function;
+true
+//creating object using factory function
+undefined
+function createObject(id,name,salary){
+    var obj={};
+    obj.id=id;
+    obj.name=name;
+    obj.salary=salary;
+    return obj;
+}
+undefined
+var ram=createObject(101,"ram",100000);
+undefined
+ram;
+{id: 101, name: "ram", salary: 100000}
+var shyam=createObject(102,"shyam",289980);
+undefined
+shyam;
+{id: 102, name: "shyam", salary: 289980}
+//empty field
+undefined
+var ram=createObject(101,"ram");
+undefined
+ram;
+{id: 101, name: "ram", salary: undefined}
+//default value
+function createObject(id,name,salary=0){
+    var obj={};
+    obj.id=id;
+    obj.name=name;
+    obj.salary=salary;
+    return obj;
+}
+undefined
+var ram=createObject(101,"ram");
+undefined
+ram;
+{id: 101, name: "ram", salary: 0}
+ram instanceof Object;
+true
+ram instanceof createObject;
+false
+//function constructor
+function Employee(id,name,salary){
+    var this={};
+VM6679:3 Uncaught SyntaxError: Unexpected token 'this'
+    at <anonymous>:1:19
+    at Array.sort (<anonymous>)
+    at <anonymous>:1:5
+(anonymous) @ VM1290:1
+(anonymous) @ VM1290:1
+//function constructor
+function Employee(id,name,salary){
+    var this={};
+    this.id=id;
+    this.name=name;
+    this.salary=salary;
+    return this;
+}
+VM6862:3 Uncaught SyntaxError: Unexpected token 'this'
+    at <anonymous>:1:19
+    at Array.sort (<anonymous>)
+    at <anonymous>:1:5
+(anonymous) @ VM1290:1
+(anonymous) @ VM1290:1
+//function constructor
+function Employee(id,name,salary){
+    //var this={};
+    this.id=id;
+    this.name=name;
+    this.salary=salary;
+    //return this;
+}
+undefined
+var ram=new Employee(101,"ram",131442);
+undefined
+ram;
+Employee {id: 101, name: "ram", salary: 131442}
+var shyam=new Employee(102,shyam",219938);
+VM7087:1 Uncaught SyntaxError: missing ) after argument list
+    at <anonymous>:1:19
+    at Array.sort (<anonymous>)
+    at <anonymous>:1:5
+(anonymous) @ VM1290:1
+(anonymous) @ VM1290:1
+var shyam=new Employee(102,"shyam",219938);
+undefined
+shyam;
+Employee {id: 102, name: "shyam", salary: 219938}
+ram instanceof Employee;
+true
+//to see internal structure
+console.dir(Employee);
+VM7283:2 ƒ Employee(id,name,salary)arguments: nullcaller: nulllength: 3name: "Employee"prototype: constructor: ƒ Employee(id,name,salary)__proto__: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()__proto__: ƒ ()apply: ƒ apply()arguments: (...)bind: ƒ bind()call: ƒ call()caller: (...)constructor: ƒ Function()length: 0name: ""toString: ƒ toString()Symbol(Symbol.hasInstance): ƒ [Symbol.hasInstance]()get arguments: ƒ ()set arguments: ƒ ()get caller: ƒ ()set caller: ƒ ()__proto__: Object[[FunctionLocation]]: <unknown>[[Scopes]]: Scopes[0][[FunctionLocation]]: VM6878:2[[Scopes]]: Scopes[1]
+undefined
+function show(){
+console.log("i am show"0;
+VM7380:2 Uncaught SyntaxError: missing ) after argument list
+    at <anonymous>:1:19
+    at Array.sort (<anonymous>)
+    at <anonymous>:1:5
+(anonymous) @ VM1290:1
+(anonymous) @ VM1290:1
+function show(){
+console.log("i am show");
+}
+undefined
+show();
+VM7398:2 i am show
+undefined
+console.dir(show);
+VM7472:1 ƒ show()arguments: nullcaller: nulllength: 0name: "show"prototype: {constructor: ƒ}constructor: ƒ show()__proto__: Object__proto__: ƒ ()apply: ƒ apply()arguments: (...)bind: ƒ bind()call: ƒ call()caller: (...)constructor: ƒ Function()length: 0name: ""toString: ƒ toString()Symbol(Symbol.hasInstance): ƒ [Symbol.hasInstance]()get arguments: ƒ ()set arguments: ƒ ()get caller: ƒ ()set caller: ƒ ()__proto__: Object[[FunctionLocation]]: <unknown>[[Scopes]]: Scopes[0][[FunctionLocation]]: VM7398:1[[Scopes]]: Scopes[1]
+undefined
